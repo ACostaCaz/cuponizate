@@ -10,7 +10,7 @@
 .grid-item { 
     grid-area: center;
     background-color: #A7CFF2;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 
@@ -25,6 +25,11 @@ input {
     border-collapse: none;
     border-style:solid;
     border-radius: 5px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 label {
