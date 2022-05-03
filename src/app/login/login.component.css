@@ -1,0 +1,36 @@
+.grid-container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "top_left top_center top_right"
+      "center_left center center_right"
+      "bot_left bot_center bot_right";
+  }
+  
+.grid-item { grid-area: center; }
+form {
+    margin-left: 200px;
+}
+
+input {
+}
+
+label {
+    margin-bottom: 25px;
+}
+
+#login {
+    margin-left: 25px;
+    border: none;
+    background-size: 50px;
+    background-color: #91B7D9;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+  
