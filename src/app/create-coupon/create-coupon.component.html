@@ -4,16 +4,18 @@
         <div class="grid-container">
             <div class="grid-item">
                 <form>
-                    <label for="couponName">Name: </label>
-                    <input type="text" id="couponName" name="couponName"><br>
-                    <label for="ogCost">Original cost: </label>
-                    <input type="text" id="ogCost" name="ogCost"><br>
-                    <label for="costDiscounted">Cost with discount: </label>
-                    <input type="text" id="costDiscounted" name="costDiscounted"><br>
-                    <label for="description">Description: </label>
-                    <textarea name="description" id="description" rows="10" cols="30"></textarea><br>
-                    <label for="addMedia">Add media files: </label>
-                    <input type="text" id="addMedia" name="addMedia" placeholder="Add media files"><br>
+                    <input type="text" id="couponName" name="couponName" placeholder="Name"><br>
+                    
+                    <input type="text" id="ogCost" name="ogCost" placeholder="Original Cost"><br>
+                    
+                    <input type="text" id="costDiscounted" name="costDiscounted" placeholder="Price with discount"><br>
+                    
+                    <textarea name="description" id="description" rows="10" cols="30" placeholder="Description"></textarea><br>
+
+                    <label>Add media files:</label>
+                    <input type="text" id="addMedia" name="addMedia"><br>
+
+                    <input type="submit" id="createCoupon" value="Create Coupon">
                 </form>
             </div>
         </div>

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CreateCouponComponent } from './create-coupon/create-coupon.component';
+import { EditCouponComponent } from './edit-coupon/edit-coupon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    CreateCouponComponent
+    CreateCouponComponent,
+    EditCouponComponent
   ],
   imports: [
     BrowserModule,
