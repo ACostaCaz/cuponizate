@@ -9,9 +9,10 @@
   
 .grid-item { 
     grid-area: center;
-    background-color: #A7CFF2;
     margin-top: 50px;
     border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px 3px rgba(170, 154, 154, 0.568);
 }
 
 form {
@@ -21,19 +22,14 @@ form {
 }
 
 input {
-    border-color: black;
-    border-collapse: none;
-    border-style:solid;
-    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     padding-top:5px;
     padding-bottom: 5px;
     padding-right: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-label {
-    margin-bottom: 25px;
 }
 
 #register {
@@ -55,4 +51,19 @@ label {
     padding-left: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+img {
+    margin-left: 280px;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    margin-left: 10px;
+}
+
+.loginredir {
+    margin-left: 60px;
 }
