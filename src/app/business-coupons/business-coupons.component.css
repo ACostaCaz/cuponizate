@@ -1,0 +1,37 @@
+h2 {
+    margin-left: 50px;
+}
+
+input {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #91B7D9;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+.coupon {
+    background-color: #a4cff5;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+img {
+    margin-left: 50px;
+    width: 300px;
+    height: 250px;
+}
+
+.couponInfo {
+    margin-top: -250px;
+    margin-left: 500px;
+}

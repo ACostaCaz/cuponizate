@@ -7,6 +7,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CreateCouponComponent } from './create-coupon/create-coupon.component';
 import { EditCouponComponent } from './edit-coupon/edit-coupon.component';
+import { BusinessCouponsComponent } from './business-coupons/business-coupons.component';
+import { CouponComponent } from './coupon/coupon.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +17,9 @@ import { EditCouponComponent } from './edit-coupon/edit-coupon.component';
     LoginComponent,
     RegisterComponent,
     CreateCouponComponent,
-    EditCouponComponent
+    EditCouponComponent,
+    BusinessCouponsComponent,
+    CouponComponent
   ],
   imports: [
     BrowserModule,
