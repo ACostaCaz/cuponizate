@@ -9,6 +9,8 @@ import { CreateCouponComponent } from './create-coupon/create-coupon.component';
 import { EditCouponComponent } from './edit-coupon/edit-coupon.component';
 import { BusinessCouponsComponent } from './business-coupons/business-coupons.component';
 import { CouponComponent } from './coupon/coupon.component';
+import { BusinessProfileComponent } from './business-profile/business-profile.component';
+import { ProfileManagementComponent } from './profile-management/profile-management.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { CouponComponent } from './coupon/coupon.component';
     CreateCouponComponent,
     EditCouponComponent,
     BusinessCouponsComponent,
-    CouponComponent
+    CouponComponent,
+    BusinessProfileComponent,
+    ProfileManagementComponent
   ],
   imports: [
     BrowserModule,
