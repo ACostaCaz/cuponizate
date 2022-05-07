@@ -12,6 +12,7 @@ import { CouponComponent } from './coupon/coupon.component';
 import { BusinessProfileComponent } from './business-profile/business-profile.component';
 import { ProfileManagementComponent } from './profile-management/profile-management.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { IndexComponent } from './index/index.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     CouponComponent,
     BusinessProfileComponent,
     ProfileManagementComponent,
-    NavbarComponent
+    NavbarComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

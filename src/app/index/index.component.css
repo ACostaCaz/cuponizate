@@ -1,0 +1,26 @@
+h2 {
+    margin-left: 50px;
+}
+
+.coupon {
+    font-size: small;
+    box-shadow: 10px 5px 50px 3px rgba(170, 154, 154, 0.568);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-left: 50px;
+    margin-right: 1200px;
+    border-radius: 10px;
+}
+
+img {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 250px;
+}
+
+.couponInfo {
+    margin-top: -250px;
+    margin-left: 350px;
+}
