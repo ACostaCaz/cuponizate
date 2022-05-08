@@ -10,7 +10,7 @@ import { Coupon } from '../interfaces/coupon.interface';
 export class CouponComponent implements OnInit {
   coupons!:Coupon;
   constructor(private route: ActivatedRoute,private readonly afs: AngularFirestore) {
-    
+     
    }
 
   ngOnInit() {

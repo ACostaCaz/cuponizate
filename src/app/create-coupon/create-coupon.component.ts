@@ -10,6 +10,7 @@ import * as uuid from 'uuid';
 export class CreateCouponComponent {
   name!: string;
   ogCost!: string;
+  business!: string;
   discounted!: string;
   description!: number;
   constructor(private couponsService: CouponsService, private auth: AuthService) { }
@@ -17,6 +18,7 @@ export class CreateCouponComponent {
   createCoupon() {
     this.couponsService.create({
       id: uuid.v4(),
+      business: this.business,
       name: this.name,
       ogCost: this.ogCost,
       discounted: this.discounted,

@@ -1,7 +1,6 @@
-export interface Coupon {
+export interface businessProfile {
     id: string;
     name: string;
-    business: string;
     ogCost: string;
     discounted: string;
     description: number;

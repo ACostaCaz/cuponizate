@@ -18,10 +18,10 @@ export class CouponsService {
   create(coupon: Coupon) {
     this.couponsCollection.add(coupon);
   }
-  /* update(id: string, data: any): Promise<void> {
-    return this.couponsRef.doc(id).update(data);
+   update(id: string, data: any){
+    return this.couponsCollection.doc(id).update(data);
   }
-  delete(id: string): Promise<void> {
-    return this.couponsRef.doc(id).delete();
-  } */
+  delete(id: string) {
+    return this.couponsCollection.doc(id).delete();
+  }
 }
