@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CouponsService } from '../services/coupons.service';
 import { AuthService } from '../services/auth.service';
+import * as uuid from 'uuid';
 @Component({
   selector: 'app-create-coupon',
   templateUrl: './create-coupon.component.html',
@@ -15,6 +16,7 @@ export class CreateCouponComponent {
 
   createCoupon() {
     this.couponsService.create({
+      id: uuid.v4(),
       name: this.name,
       ogCost: this.ogCost,
       discounted: this.discounted,

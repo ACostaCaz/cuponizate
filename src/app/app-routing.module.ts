@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'editCoupon', component: EditCouponComponent, pathMatch: 'full',canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToLogin }},
   { path: 'mycoupons', component: BusinessCouponsComponent, pathMatch: 'full',canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToLogin }},
   { path: 'createcoupon', component: CreateCouponComponent, pathMatch: 'full',canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToLogin }},
-  { path: 'coupon', component: CouponComponent, pathMatch: 'full',canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToLogin }},
+  { path: 'coupon/:id', component: CouponComponent, pathMatch: 'full',canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToLogin }},
   { path: 'businessprofile', component: BusinessProfileComponent, pathMatch: 'full',canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToLogin }},
   { path: 'profilemanagement', component: ProfileManagementComponent, pathMatch: 'full',canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToLogin }}
 ];
