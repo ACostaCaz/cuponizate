@@ -1,22 +1,21 @@
 <app-navbar></app-navbar>
 <div class="grid-container">
-    <div class="grid-item">
-        <h2>Cinema</h2>
+    <a *ngIf="!profile" href="profilemanagement">Create profile</a>
+    <div *ngIf="profile" class="grid-item">
+        <h2>{{profile.name}}</h2>
         <a name = "couponList" href="mycoupons">My coupons list</a>
         <img src="../../assets/couponimg.jpeg" alt="businessimage">
-        <h4>Category</h4>
-        <p>Entertainment</p>
         <h4>Address</h4>
-        <p>C.C Las Arenas</p>
+        <p>{{profile.address}}</p>
         <h4>Week Schedule</h4>
         <ul>
-            <li>M - 10:00-23:00</li>
-            <li>T - 10:00-23:00</li>
-            <li>W - 10:00-23:00</li>
-            <li>T - 10:00-23:00</li>
-            <li>F - 10:00-23:00</li>
-            <li>S - 10:00-23:00</li>
-            <li>S - 10:00-23:00</li>
+            <li>M - {{profile.monday}}</li>
+            <li>T - {{profile.tuesday}}</li>
+            <li>W - {{profile.wednesday}}</li>
+            <li>T - {{profile.thursday}}</li>
+            <li>F - {{profile.friday}}</li>
+            <li>S - {{profile.saturday}}</li>
+            <li>S - {{profile.sunday}}</li>
         </ul>
     </div>
 </div>

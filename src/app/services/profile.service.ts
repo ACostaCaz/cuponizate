@@ -9,7 +9,7 @@ export class profileService {
   private profileCollection: AngularFirestoreCollection<businessProfile>;
   profile: Observable<businessProfile[]>;
   constructor(private afs: AngularFirestore) {
-    this.profileCollection = afs.collection<businessProfile>('profile');
+    this.profileCollection = afs.collection<businessProfile>('profiles');
     this.profile = this.profileCollection.valueChanges();
   }
   create(profile: businessProfile) {

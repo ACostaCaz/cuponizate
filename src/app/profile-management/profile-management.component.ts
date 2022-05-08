@@ -9,7 +9,6 @@ import {AuthService} from '../services/auth.service';
 export class ProfileManagementComponent implements OnInit {
   name!: string;
   address!: string;
-  category!: string;
   monday!: string;
   tuesday!: string;
   wednesday!: string;
