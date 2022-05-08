@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Coupon } from '../interfaces/coupon.interface';
+import * as uuid from 'uuid';
 @Component({
   selector: 'app-coupon',
   templateUrl: './coupon.component.html',
@@ -9,6 +10,7 @@ import { Coupon } from '../interfaces/coupon.interface';
 })
 export class CouponComponent implements OnInit {
   coupons!:Coupon;
+  code!: string;
   constructor(private route: ActivatedRoute,private readonly afs: AngularFirestore) {
      
    }
@@ -28,4 +30,8 @@ export class CouponComponent implements OnInit {
      .subscribe(coupon => resolve(coupon))
     })
    }
+
+  getCode() {
+    this.code = uuid.v4()
+  }
 }
