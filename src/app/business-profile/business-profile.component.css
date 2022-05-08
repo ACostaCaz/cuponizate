@@ -16,6 +16,11 @@
     box-shadow: 10px 5px 50px 3px rgba(170, 154, 154, 0.568);
 }
 
+a {
+    margin-left: 50px;
+    text-decoration: none;
+}
+
 img {
     padding: 50px;
 }
