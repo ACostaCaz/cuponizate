@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -13,7 +13,12 @@ import { BusinessProfileComponent } from './business-profile/business-profile.co
 import { ProfileManagementComponent } from './profile-management/profile-management.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { IndexComponent } from './index/index.component';
+import { environment } from '../environments/environment';
 
+
+import { AngularFireAuthModule} from '@angular/fire/compat/auth'
+import { AngularFireModule} from '@angular/fire/compat'
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
 
 @NgModule({
   declarations: [
@@ -31,9 +36,13 @@ import { IndexComponent } from './index/index.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule, AngularFirestoreModule 
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

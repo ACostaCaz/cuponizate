@@ -98,6 +98,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "cuponizate:build:production",
+            "firebaseProject": "cuponizate-33b5a",
+            "firebaseHostingSite": "cuponizate-33b5a"
+          }
         }
       }
     }
