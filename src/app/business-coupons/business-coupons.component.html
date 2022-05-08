@@ -5,10 +5,11 @@
         <img src="../../assets/couponimg.jpeg" alt="couponImage">
         <div class="couponInfo">    
             <h4>{{coupon.name}}</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>{{coupon.description}}</p>
             <b><p>Original cost: </p></b>
+            <p class="cost">{{coupon.ogCost}}€</p>
             <b><p>Discounted price: </p></b>
+            <p class="cost">{{coupon.discounted}}€</p>
             <a href="editCoupon" class="formInput" id="modifyCoupon">Modify</a>
             <input type="submit" class="formInput" id="deleteCoupon" value="Delete">
     </div>
