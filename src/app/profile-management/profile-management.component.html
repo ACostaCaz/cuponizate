@@ -3,23 +3,23 @@
     <div class="grid-item">
         <h3>Edit company profile</h3>
         <form>
-            <input type="text" id="profileName" name="profileName" placeholder="Company name"><br>
+            <input type="text" [(ngModel)]="name" id="profileName" name="profileName" placeholder="Company name"><br>
             
-            <input type="text" id="category" name="category" placeholder="Category"><br>
+            <input type="text" id="category" [(ngModel)]="category" name="category" placeholder="Category"><br>
             
-            <input type="text" id="address" name="address" placeholder="Address"><br>
+            <input type="text" id="address" [(ngModel)]="address" name="address" placeholder="Address"><br>
             
             <ul>
-                <li>M - <input type="text" id="time" placeholder="HH:MM"></li>
-                <li>T - <input type="text" id="time" placeholder="HH:MM"></li>
-                <li>W - <input type="text" id="time" placeholder="HH:MM"></li>
-                <li>T - <input type="text" id="time" placeholder="HH:MM"></li>
-                <li>F - <input type="text" id="time" placeholder="HH:MM"></li>
-                <li>S - <input type="text" id="time" placeholder="HH:MM"></li>
-                <li>S - <input type="text" id="time" placeholder="HH:MM"></li>
+                <li>M - <input type="text" [(ngModel)]="monday" name="time" id="time" placeholder="HH:MM"></li>
+                <li>T - <input type="text" [(ngModel)]="tuesday" name="time" id="time" placeholder="HH:MM"></li>
+                <li>W - <input type="text" [(ngModel)]="wednesday" name="time" id="time" placeholder="HH:MM"></li>
+                <li>T - <input type="text" [(ngModel)]="thursday" name="time" id="time" placeholder="HH:MM"></li>
+                <li>F - <input type="text" [(ngModel)]="friday" name="time" id="time" placeholder="HH:MM"></li>
+                <li>S - <input type="text" [(ngModel)]="saturday" name="time" id="time" placeholder="HH:MM"></li>
+                <li>S - <input type="text" [(ngModel)]="sunday" name="time" id="time" placeholder="HH:MM"></li>
             </ul>
 
-            <input type="submit" id="saveProfile" value="Save changes">
+            <input type="submit" (click)="createProfile()" id="saveProfile" value="Save changes">
         </form>
 
     </div>
