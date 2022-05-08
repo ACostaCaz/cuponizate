@@ -1,14 +1,24 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { UserAuth } from '../interfaces/user-auth.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class AuthService {
-  constructor(public auth: AngularFireAuth) {}
-
+  private user: any;
+  constructor(public auth: AngularFireAuth) {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        this.user = user;
+      } else {
+        this.user = null;
+      }
+    })
+  }
+  getUid() {
+    return this.user.uid
+  }
   login({ email, password }: any) {
     return this.auth.signInWithEmailAndPassword(email, password);
   }

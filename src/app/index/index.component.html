@@ -1,11 +1,10 @@
 <app-navbar></app-navbar>
 <h2>Popular coupons</h2>
-    <div class="coupon">
+    <div class="coupon" *ngFor="let coupon of coupons | async">
         <img src="../../assets/couponimg.jpeg" alt="couponImage">
         <div class="couponInfo">    
-            <h4>Coupon for the cinema</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h4>{{coupon.name}}</h4>
+            <p>{{coupon.description}}</p>
             <b><p>Original cost: </p></b>
             <b><p>Discounted price: </p></b>
     </div>
