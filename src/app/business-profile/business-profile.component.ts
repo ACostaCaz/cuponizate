@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import {businessProfile} from '../interfaces/business-profile.interface';
-import { Router } from '@angular/router';
 @Component({
   selector: 'app-business-profile',
   templateUrl: './business-profile.component.html',
@@ -10,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class BusinessProfileComponent implements OnInit {
   profile!: businessProfile
-  constructor(private route: ActivatedRoute,private readonly afs: AngularFirestore, public router: Router) {
+  constructor(private route: ActivatedRoute,private readonly afs: AngularFirestore) {
     
   }
 
