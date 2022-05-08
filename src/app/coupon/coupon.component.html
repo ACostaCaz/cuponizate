@@ -7,6 +7,11 @@
         <p>Company name: Cinema</p>
         <p>Original cost: {{coupons.ogCost}}</p>
         <p>Cost with discount: {{coupons.discounted}}</p>
-        <input type="submit" id="buyCoupon" value="Buy coupon">
+        <form>
+            <input type="text" id="cardNum" class="formInput" placeholder="Credit card number"><br>
+            <input type="text" id="cardExpedition" class="formInput" placeholder="Card expedition date: MM/YY"><br>
+            <input type="text" id="cardOwner" class="formInput" placeholder="Name in the card">
+            <input type="submit" id="buyCoupon" value="Buy coupon">
+        </form>
     </div>
 </div>

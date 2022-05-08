@@ -18,7 +18,12 @@
 
 a {
     margin-left: 50px;
+    color: black;
     text-decoration: none;
+}
+
+a:hover {
+    color: blue;
 }
 
 img {

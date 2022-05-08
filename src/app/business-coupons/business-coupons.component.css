@@ -52,6 +52,10 @@ a {
     color: black;
 }
 
+a:hover {
+    color: blue;
+}
+
 #createCoupon {
     border-radius: 10px;
     border: none;
