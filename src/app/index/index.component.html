@@ -3,7 +3,7 @@
     <div class="coupon" *ngFor="let coupon of coupons | async">
         <img src="../../assets/couponimg.jpeg" alt="couponImage">
         <div class="couponInfo">    
-            <h4>{{coupon.name}}</h4>
+            <a href="coupon/{{coupon.id}}"><h4>{{coupon.name}}</h4></a>
             <p>{{coupon.description}}</p>
             <b><p>Original cost: </p></b>
             <b><p>Discounted price: </p></b>
