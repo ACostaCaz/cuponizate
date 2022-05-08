@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -11,14 +13,14 @@ export class RegisterComponent {
   password!: string;
   passwordRepeat?: string;
   
-  constructor(public auth: AuthService) { }
-
-  register(): void {
+  constructor(public AuthService: AuthService, public router: Router) { }
+  register() {
     if (this.password === this.passwordRepeat) {
-      this.auth.register({email: this.email,password: this.password});
+      this.AuthService.register({email: this.email,password: this.password}).then(() => {
+        this.router.navigateByUrl('/login');
+      })
     } else {
       console.log('Passwords do not match');
     }
   }
-
 }

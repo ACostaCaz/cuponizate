@@ -15,7 +15,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { IndexComponent } from './index/index.component';
 import { environment } from '../environments/environment';
 
-
 import { AngularFireAuthModule} from '@angular/fire/compat/auth'
 import { AngularFireModule} from '@angular/fire/compat'
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
@@ -42,6 +41,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
     AngularFireAuthModule, AngularFirestoreModule 
   ],
   providers: [
+    
   ],
   bootstrap: [AppComponent]
 })

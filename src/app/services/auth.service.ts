@@ -1,11 +1,5 @@
 import { Injectable } from '@angular/core';
-import {
-  Auth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  signOut,
-  User,
-} from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { UserAuth } from '../interfaces/user-auth.interface';
 
 @Injectable({
@@ -13,17 +7,17 @@ import { UserAuth } from '../interfaces/user-auth.interface';
 })
 
 export class AuthService {
-  constructor(private auth: Auth) {}
+  constructor(public auth: AngularFireAuth) {}
 
-  login({ email, password }: UserAuth) {
-    return signInWithEmailAndPassword(this.auth, email, password);
+  login({ email, password }: any) {
+    return this.auth.signInWithEmailAndPassword(email, password);
   }
 
-  register({ email, password }: UserAuth) {
-    return createUserWithEmailAndPassword(this.auth, email, password);
+  register({ email, password }: any) {
+    return this.auth.createUserWithEmailAndPassword(email, password);
   }
 
   logout() {
-    return signOut(this.auth);
+    return this.auth.signOut();
   }
 }
